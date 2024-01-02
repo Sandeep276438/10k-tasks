@@ -6,14 +6,47 @@
     <title>Document</title>
     <style>
         .image{
-            position: relative;
-            bottom: 200px;
-            left: 200px;
+            position: absolute;
+            bottom: 240px;
+            left: 480px;  
+            animation-name: s1;
+            animation-duration: 3s;
+            animation-iteration-count:1;
+            animation-delay: 2s;
+    }
+    @keyframes s1{
+        from{
+            transform: translatex(0px) scale(1) rotate(0deg);
         }
+        to{
+            transform: translateX(-240px) scale(0) rotate(360deg);
+        }
+    }
+    .image1{
+        position: absolute;
+        left: 280px;
+        bottom: 280px;
+        animation-name: s2;
+        animation-duration: 4s;
+        animation-iteration-count: 1;
+        animation-delay: 3s;
+    }
+    @keyframes s2{
+        from{
+            transform: scale(0);
+        }
+        to{
+            transform: scale(1);
+        }
+
+    }
     </style>
 </head>
 <body>
+<div>
 <img src="./2.jpg" width="600" height="600">
-<img class="image" src="./OIG.jpg" width="100" height="100">
+<img class="image" src="./OIG.png" width="150" height="150">
+<img class="image1" src="./pic2.png" width="80px" height="80px">
+</div>
 </body>
 </html>
